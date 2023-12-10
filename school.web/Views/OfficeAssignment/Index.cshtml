@@ -1,0 +1,40 @@
+﻿@model IEnumerable<school.web.Models.OfficeAssignmentListModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Oficinista</h1>
+
+<p>
+    <a asp-action="Create">Agregar Nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Codigo
+            </th>
+            <th>
+                Localizacion
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.InstructorId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id=item.InstructorId }) |
+                @Html.ActionLink("Ver Detalles", "Details", new { id=item.InstructorId }) 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

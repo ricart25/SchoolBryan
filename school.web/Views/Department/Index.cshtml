@@ -1,0 +1,52 @@
+﻿@model IEnumerable<school.web.Models.DepartmentListModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Departamento</h1>
+
+<p>
+    <a asp-action="Create">New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Code
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Budgets
+            </th>
+            <th>
+                Initial Date
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DepartmentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Budget)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.DepartmentId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.DepartmentId }) 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

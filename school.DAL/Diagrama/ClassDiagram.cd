@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="school.DAL.CORE.BaseEntity" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAAAAAAAAAAAAAAAAAkAAAACAAAAAACABAAAAAAAA=</HashCode>
+      <FileName>CORE\BaseEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="school.DAL.CORE.Person" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>CORE\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="school.DAL.Entidades.Course" Collapsed="true">
+    <Position X="7" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAEAAAAAAAAgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\Course.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="school.DAL.Entidades.Departments" Collapsed="true">
+    <Position X="4.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAEAAAAAAAAAAEAAgAA=</HashCode>
+      <FileName>Entidades\Departments.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="school.DAL.Entidades.Instructors" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\Instructors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="school.DAL.Entidades.OfficeAssignment" Collapsed="true">
+    <Position X="1.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAICAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\OfficeAssignment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="school.DAL.Entidades.OnlineCourse" Collapsed="true">
+    <Position X="7.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\OnlineCourse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="school.DAL.Entidades.OnsiteCourse" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAIAAAAAAAAAAAAAQAAAAAAAAQA=</HashCode>
+      <FileName>Entidades\OnsiteCourse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="school.DAL.Entidades.StudentGrade" Collapsed="true">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAECAAA=</HashCode>
+      <FileName>Entidades\StudentGrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="school.DAL.Entidades.Students" Collapsed="true">
+    <Position X="2.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entidades\Students.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

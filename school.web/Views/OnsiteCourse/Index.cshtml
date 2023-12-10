@@ -1,0 +1,52 @@
+﻿@model IEnumerable<school.web.Models.OnsiteCourseListModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>On site Course</h1>
+
+<p>
+    <a asp-action="Create">Create</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Code 
+            </th>
+            <th>
+                Location
+            </th>
+            <th>
+                Days
+            </th>
+            <th>
+                Time
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Days)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.CourseID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.CourseID }) 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

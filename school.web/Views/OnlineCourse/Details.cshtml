@@ -1,0 +1,29 @@
+﻿@model school.web.Models.OnlineCourseListModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detail of course</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Code of course
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CourseID)
+        </dd>
+        <dt class = "col-sm-2">
+            URL
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.URL)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CourseID }) |
+    <a asp-action="Index">Return</a>
+</div>

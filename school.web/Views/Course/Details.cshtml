@@ -1,0 +1,40 @@
+﻿@model school.web.Models.CourseListModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h3>Detalles del curso: @Model.Title</h3>
+
+<div><hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Code of course
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CourseID)
+        </dd>
+        <dt class = "col-sm-2">
+            Title
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class = "col-sm-2">
+            Credits
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Credits)
+        </dd>
+        <dt class = "col-sm-2">
+            Code of department
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DepartmentID)
+        </dd>       
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.CourseID }) |
+    <a asp-action="Index">Return</a>
+</div>

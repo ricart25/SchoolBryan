@@ -1,0 +1,47 @@
+﻿@model school.web.Models.StudentGradeViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EnrollmentId" class="control-label">Code of inscription</label>
+                <input asp-for="EnrollmentId" class="form-control" readonly/>
+                <span asp-validation-for="EnrollmentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CourseId" class="control-label">Codigo of course</label>
+                <input asp-for="CourseId" class="form-control" />
+                <span asp-validation-for="CourseId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StudentId" class="control-label">Code of Student</label>
+                <input asp-for="StudentId" class="form-control" />
+                <span asp-validation-for="StudentId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Grade" class="control-label">Grade</label>
+                <input asp-for="Grade" class="form-control" />
+                <span asp-validation-for="Grade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Return</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
